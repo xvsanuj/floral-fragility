@@ -49,7 +49,7 @@
 }
 
 *{
-    font-family:  Gilroy;
+    font-family:  "Gilroy", sans-serif;
 }
 
 .navtext::after{
