@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Thin.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-ExtraLight.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-ExtraBold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Black.ttf');
+    font-weight: 900;
+}
+
+*{
+    font-family:  Gilroy;
+}
+
+.navtext::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: all ease 0.3s;
+}
+.navtext:hover::after{
+    width:100%;
+}
+
+#btn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translateY(100%);
+    transition: all ease 0.3s;
+}
+#btn:hover::after{
+    transform: translateY(0%);
+    border-radius: 0px;
+}
+#btn span{
+    transition: all ease 0.3s;
+}
+#btn:hover span{
+    color: #FF8676;
+}
